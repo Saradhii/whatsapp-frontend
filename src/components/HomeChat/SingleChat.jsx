@@ -15,7 +15,7 @@ const SingleChat = () => {
         "senderid":id,
         "reciverid":userid
       };
-      axios.post(`http://localhost:8060/message/allfor`, msgData, {
+      axios.post(`https://whatsapp-clone-saradhi.herokuapp.com/message/allfor`, msgData, {
         headers: { "Content-Type": "application/json" },
       }).then((responce) => {
         const { data } = responce;
@@ -28,7 +28,7 @@ const SingleChat = () => {
         "senderid":userid,
         "reciverid":id
       };
-      axios.post(`http://localhost:8060/message/allfor`, msgData, {
+      axios.post(`https://whatsapp-clone-saradhi.herokuapp.com/message/allfor`, msgData, {
         headers: { "Content-Type": "application/json" },
       }).then((responce) => {
         const { data } = responce;
@@ -51,7 +51,7 @@ const SingleChat = () => {
     const handleSubmit = (e)=>{
     e.preventDefault();
     console.log(formData);
-    axios.post(`http://localhost:8060/message/new`, formData, {
+    axios.post(`https://whatsapp-clone-saradhi.herokuapp.com/message/new`, formData, {
         headers: { "Content-Type": "application/json" },
       }).then((responce) => {
         const { data } = responce;

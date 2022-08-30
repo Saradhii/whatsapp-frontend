@@ -61,7 +61,7 @@ const Home = () => {
 // get list of users
   useEffect(() => {
     const getdata= async()=>{
-       let res = await fetch(`http://localhost:8060/user/allusers`,{
+       let res = await fetch(`https://whatsapp-clone-saradhi.herokuapp.com/user/allusers`,{
            method:"GET",
          });
          let data = await res.json();

@@ -40,7 +40,7 @@ const Login = () => {
     //Sending form-data to login end-point
     const handleSubmit = (e)=>{
         e.preventDefault();
-        axios.post(`http://localhost:8060/user/signin`, formData, {
+        axios.post(`https://whatsapp-clone-saradhi.herokuapp.com/user/signin`, formData, {
         headers: { "Content-Type": "application/json" },
         }).then((responce) => {
         const { data } = responce;
